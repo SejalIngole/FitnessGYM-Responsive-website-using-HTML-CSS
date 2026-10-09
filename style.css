@@ -1,0 +1,800 @@
+/* 320 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* navbar */
+
+.header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 3px solid #39b54a;
+    border-radius: 10px;
+    color: #a8e63d;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background-color: #111214;
+}
+
+.logo:hover {
+    color: white;
+    border-color: #a8e63d;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-button {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #222;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.nav-menu a {
+    padding: 12px 0;
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #39b54a;
+}
+
+#menu:checked ~ .nav-menu {
+    display: flex;
+}
+
+.call-button {
+    color: white !important;
+    background-color: #39b54a;
+    padding: 12px 18px !important;
+    border-radius: 5px;
+}
+
+.call-button:hover {
+    background-color: #222 !important;
+}
+
+
+/* why choose us */
+
+.why-gym {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading p {
+    color: #39b54a;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.section-heading h1 {
+    font-size: 30px;
+    color: #222;
+}
+
+.why-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.why-text {
+    width: 100%;
+}
+
+.paragraphs p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 13px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.outline-btn {
+    border: 2px solid #222;
+    color: #222;
+}
+
+.outline-btn:hover {
+    background-color: #222;
+    color: white;
+}
+
+.green-btn {
+    background-color: #39b54a;
+    color: white;
+}
+
+.green-btn:hover {
+    background-color: #222;
+}
+
+
+/*why image */
+
+.why-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.why-image img {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    object-fit: contain;
+    border: 5px solid #39b54a;
+    border-radius: 50%;
+}
+
+
+/* trainers */
+
+.trainers {
+    padding: 60px 0;
+    background-image: url("../images/background/trainer-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.trainer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.trainer-intro p {
+    color: #39b54a;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.trainer-intro h2 {
+    font-size: 30px;
+    color: aqua;
+    margin-bottom: 15px;
+}
+
+.trainer-intro em {
+    color: white;
+    font-size: 15px;
+}
+
+.trainer-images {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.trainer {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.trainer img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.trainer-name {
+    padding: 18px;
+    text-align: center;
+}
+
+.trainer-name h3 {
+    font-size: 17px;
+    color: #222;
+}
+
+.trainer-name p {
+    color: #39b54a;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.trainer:hover {
+    transform: translateY(-5px);
+}
+
+
+/* services */
+
+.services {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+
+.service-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-card {
+    width: 100%;
+    background-color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.service-card h2 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.service-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+
+/* membership */
+
+.membership {
+    padding: 60px 0;
+    background-image: url("../images/background/pricing-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.membership-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.price-card {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.price-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.price-content {
+    padding: 25px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #39b54a;
+    margin-bottom: 10px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #777;
+}
+
+.price-content h2 {
+    font-size: 21px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.price-content ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.price-content li {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.enroll {
+    display: inline-block;
+    background-color: #39b54a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.enroll:hover {
+    background-color: #222;
+}
+
+
+/* hours+nrwsletter */
+
+.hours-newsletter {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.bottom-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.small-title {
+    color: #39b54a;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.working-hours h2,
+.newsletter h2 {
+    color: #222;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.day.active {
+    color: #39b54a;
+    font-weight: bold;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter input {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.newsletter input:focus {
+    outline: none;
+    border-color: #39b54a;
+}
+
+.note {
+    color: #777;
+    font-size: 13px;
+}
+
+.newsletter button {
+    padding: 13px;
+    border: none;
+    background-color: #39b54a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.newsletter button:hover {
+    background-color: #222;
+}
+
+
+/* footerrrr*/
+
+.footer {
+    background-color: #222;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-bottom: 40px;
+}
+
+.footer-box {
+    width: 100%;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-box p {
+    color: #ccc;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.footer-box h3 {
+    margin-bottom: 15px;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box li {
+    margin-bottom: 8px;
+}
+
+.footer-box li a {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-box li a:hover {
+    color: #39b54a;
+}
+
+.footer-box address {
+    color: #ccc;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 2;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding: 20px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* 
+   768px - TABLET
+  */
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 92%;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    .nav-menu {
+        top: 75px;
+    }
+
+
+    /* WHY */
+
+    .why-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .why-text {
+        width: 50%;
+    }
+
+    .why-image {
+        width: 50%;
+    }
+
+    .why-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .buttons {
+        flex-direction: row;
+    }
+
+
+    /* TRAINERS */
+
+    .trainer-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .trainer {
+        width: 48%;
+        margin: 1%;
+    }
+
+
+    /* SERVICES */
+
+    .service-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .service-card {
+        width: 48%;
+        margin: 1%;
+    }
+
+
+    /* MEMBERSHIP */
+
+    .membership-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .price-card {
+        width: 48%;
+        margin: 1%;
+    }
+
+
+    /* HOURS */
+
+    .bottom-grid {
+        flex-direction: row;
+    }
+
+    .working-hours,
+    .newsletter {
+        width: 50%;
+    }
+
+
+    /* FOOTER */
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .footer-box {
+        width: 50%;
+        padding: 1%;
+    }
+}
+
+/* 992px - DESKTOP */
+
+@media (min-width: 992px) {
+
+    .container {
+        width: 90%;
+    }
+
+
+    /* NAVBAR */
+
+    .menu-button {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        padding: 0;
+        border: none;
+        gap: 25px;
+        background-color: transparent;
+    }
+
+    .nav-menu a {
+        padding: 0;
+    }
+
+
+    /* WHY */
+
+    .why-gym {
+        padding: 80px 0;
+    }
+
+    .why-content {
+        gap: 60px;
+    }
+
+    .why-image {
+        width: 50%;
+    }
+
+    .why-image img {
+        width: 80%;
+        height: 600px;
+        object-fit: contain;
+        
+    }
+    /* TRAINERS */
+
+    .trainer-content {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .trainer-intro {
+        width: 25%;
+    }
+
+    .trainer-images {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .trainer {
+        width: 24%;
+        margin: 0.5%;
+    }
+
+    .trainer img {
+        height: 250px;
+    }
+
+    /* SERVICES */
+
+    .service-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .service-card {
+        width: 32%;
+        margin: 0.66%;
+    }
+
+/* MEMBERSHIP */
+
+    .membership-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .price-card {
+        width: 32%;
+        margin: 0.66%;
+    }
+
+ /* HOURS */
+
+    .bottom-grid {
+        gap: 70px;
+    }
+
+/* FOOTER */
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .footer-box {
+        width: 33%;
+        padding: 1%;
+    }
+}
